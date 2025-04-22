@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo - Colombia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Conociendo Colombia</h1>
+        <p>Explora los recursos naturales, el relieve y el clima de Colombia</p>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Pestañas -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="showTab('mapa')">Mapa</button>
+            <button class="tab-button" onclick="showTab('recursos')">Recursos Naturales</button>
+            <button class="tab-button" onclick="showTab('relieve')">Relieve</button>
+            <button class="tab-button" onclick="showTab('clima')">Clima</button>
+        </div>
+
+        <!-- Contenido de las pestañas -->
+        <div id="mapa" class="tab-content active">
+            <h2>Mapa Interactivo de Colombia</h2>
+            <!-- Incluir el CSS de Leaflet -->
+            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+            <div id="map"></div>
+            <p>Haz clic en el mapa para interactuar con las diferentes zonas de Colombia.</p>
+        </div>
+
+        <div id="recursos" class="tab-content">
+            <h2>Recursos Naturales de Colombia</h2>
+            <p>Colombia es rica en recursos naturales como petróleo, carbón, esmeraldas y más. Estos recursos juegan un papel importante en la economía del país.</p>
+        </div>
+
+        <div id="relieve" class="tab-content">
+            <h2>Relieve de Colombia</h2>
+            <p>El relieve colombiano es muy variado, con grandes montañas como los Andes, valles fértiles y amplias llanuras.</p>
+        </div>
+
+        <div id="clima" class="tab-content">
+            <h2>Clima de Colombia</h2>
+            <p>Colombia tiene un clima tropical debido a su ubicación cerca del ecuador, con diversas zonas climáticas como cálido, templado y frío.</p>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Conociendo Colombia. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
