@@ -1,4 +1,4 @@
-// script.js - Interactividad para la página educativa de Colombia
+
 
 document.addEventListener("DOMContentLoaded", () => {
   animarTarjetas();
