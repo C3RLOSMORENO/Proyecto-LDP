@@ -1,66 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interactivo - Colombia</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-
-<body>
-    <!-- Encabezado -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aprendamos sobre Colombia 🇨🇴</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
     <header>
-        <h1>Conociendo Colombia</h1>
-        <p>Explora los recursos naturales, el relieve y el clima de Colombia</p>
+      <h1>🌎 Descubre Colombia</h1>
+      <p>Una herramienta educativa para estudiantes de 5° primaria</p>
     </header>
 
-    <!-- Contenedor principal -->
-    <div class="container">
-        <!-- Pestañas -->
-        <div class="tabs">
-            <button class="tab-button active" onclick="showTab('mapa')">Mapa</button>
-            <button class="tab-button" onclick="showTab('recursos')">Recursos Naturales</button>
-            <button class="tab-button" onclick="showTab('relieve')">Relieve</button>
-            <button class="tab-button" onclick="showTab('clima')">Clima</button>
+    <nav>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#relieve">Relieve y Clima</a>
+      <a href="#recursos">Recursos Naturales</a>
+      <a href="#ecosistemas">Ecosistemas</a>
+      <a href="#departamentos">Departamentos</a>
+      <a href="#video">Video</a>     
+      <a href="#curiosidades">Curiosidades</a>
+      <a href="#actividades">Actividades</a>
+    </nav>
+
+    <section id="ubicacion" class="tarjeta">
+      <h2>📍 Ubicación Geográfica</h2>
+      <p>
+        Colombia está ubicada en la esquina noroccidental de América del Sur. Se
+        encuentra entre los 12°N y 4°S de latitud, y entre los 67°W y 79°W de
+        longitud. Es el único país sudamericano con costas en el océano Pacífico
+        y el mar Caribe.
+      </p>
+      <ul>
+        <li><strong>Limita al norte</strong> con el mar Caribe.</li>
+        <li><strong>Al este</strong> con Venezuela y Brasil.</li>
+        <li><strong>Al sur</strong> con Perú y Ecuador.</li>
+        <li><strong>Al oeste</strong> con Panamá y el océano Pacífico.</li>
+      </ul>
+      <p>
+        Su ubicación estratégica le permite ser un puente comercial, cultural y
+        ecológico entre América Central y América del Sur.
+      </p>
+      <img src="Material/mapapolitico.jpg" alt="Mapa político de Colombia" />
+    </section>
+
+    <section id="relieve" class="tarjeta">
+      <h2>⛰️ Relieve y Clima</h2>
+      <p>
+        El relieve colombiano es variado. Se destacan las tres cordilleras de
+        los Andes (Occidental, Central y Oriental), que atraviesan el país de
+        sur a norte. También hay planicies extensas como los Llanos Orientales,
+        la Amazonía y las costas del Caribe y el Pacífico.
+      </p>
+      <p>
+        La altitud influye directamente en el clima. Los climas se agrupan por
+        pisos térmicos:
+      </p>
+      <ul>
+        <li><strong>Cálido:</strong> hasta 24°C – Costa Caribe, Amazonas.</li>
+        <li><strong>Templado:</strong> 17–24°C – Medellín, Armenia.</li>
+        <li><strong>Frío:</strong> 12–17°C – Bogotá, Tunja.</li>
+        <li><strong>Páramo:</strong> menos de 12°C – Sumapaz, Cocuy.</li>
+      </ul>
+      <p>
+        La variedad de climas favorece la agricultura, biodiversidad y el
+        turismo.
+      </p>
+      <img src="Material/relieve.png" alt="Relieve de Colombia" />
+    </section>
+
+    <section id="recursos" class="tarjeta">
+      <h2>🌿 Recursos Naturales</h2>
+      <p>Colombia tiene recursos:</p>
+      <ul>
+        <li>
+          <strong>Renovables:</strong> agua, bosques, suelos fértiles,
+          biodiversidad.
+        </li>
+        <li>
+          <strong>No renovables:</strong> petróleo, carbón, minerales, gas
+          natural.
+        </li>
+      </ul>
+      <p>
+        Es vital usarlos de forma sostenible para proteger el medio ambiente.
+      </p>
+      <img src="Material/recursos.jpg" alt="Recursos Naturales de Colombia" />
+    </section>
+
+    <section id="ecosistemas" class="tarjeta">
+      <h2>🌳 Ecosistemas Colombianos</h2>
+      <p>Gracias a su variedad geográfica, en Colombia existen:</p>
+      <ul>
+        <li>🌴 Selvas tropicales (Amazonas, Chocó)</li>
+        <li>🌾 Llanuras y sabanas (Orinoquía)</li>
+        <li>⛰️ Páramos (Andes)</li>
+        <li>🌊 Manglares y humedales (Costa Pacífica)</li>
+      </ul>
+      <img src="Material/ecosistema.jpeg" alt="Ecosistemas de Colombia" />
+    </section>
+
+    <section id="departamentos" class="tarjeta">
+      <h2>🏞️ Departamentos y Regiones</h2>
+      <p>Colombia tiene 32 departamentos y 6 regiones:</p>
+      <ul>
+        <li><strong>Andina:</strong> Antioquia, Cundinamarca</li>
+        <li><strong>Caribe:</strong> Atlántico, Bolívar</li>
+        <li><strong>Pacífica:</strong> Chocó, Valle del Cauca</li>
+        <li><strong>Orinoquía:</strong> Meta, Arauca</li>
+        <li><strong>Amazonía:</strong> Amazonas, Caquetá</li>
+        <li><strong>Insular:</strong> San Andrés</li>
+      </ul>
+      <img src="Material/departamento.png" alt="Regiones de Colombia" />
+    </section>
+
+    <section id="video" class="tarjeta">
+      <h2>🎥 Video Educativo</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="Material/colombia.mp4"
+        
+        title="Relieve Colombia"</p>
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+      
+    </section>
+
+      <div id="juegoPixel" class="pixel-juego">
+        <h3>🎮 Aventura de Colombia</h3>
+        <p>Ayuda al explorador a encontrar la región correcta:</p>
+        <div id="preguntaJuego" class="pregunta"></div>
+        <div class="opciones">
+          <button class="opcion" onclick="seleccionar('caribe')">Caribe</button>
+          <button class="opcion" onclick="seleccionar('andina')">Andina</button>
+          <button class="opcion" onclick="seleccionar('amazonía')">
+            Amazonía
+          </button>
         </div>
+        <div id="resultadoJuego" class="resultado-juego"></div>
+        <button onclick="siguientePregunta()" class="siguiente">
+          Siguiente
+        </button>
+      </div>
+    </section>
 
-        <!-- Contenido de las pestañas -->
-        <div id="mapa" class="tab-content active">
-            <h2>Mapa Interactivo de Colombia</h2>
-            <!-- Incluir el CSS de Leaflet -->
-            <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-            <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <section id="curiosidades" class="tarjeta">
+      <h2>🤓 Curiosidades de Colombia</h2>
+      <ul>
+        <li>Colombia tiene más de 60 lenguas indígenas.</li>
+        <li>Caño Cristales cambia de color por las macarenias.</li>
+        <li>Es el mayor exportador mundial de esmeraldas finas.</li>
+        <li>El cóndor de los Andes es su ave nacional.</li>
+      </ul>
+    </section>
 
-            <div id="map"></div>
-            <p>Haz clic en el mapa para interactuar con las diferentes zonas de Colombia.</p>
-        </div>
+    <section id="actividades" class="tarjeta">
+      <h2>✏️ Actividades Interactivas</h2>
 
-        <div id="recursos" class="tab-content">
-            <h2>Recursos Naturales de Colombia</h2>
-            <p>Colombia es rica en recursos naturales como petróleo, carbón, esmeraldas y más. Estos recursos juegan un papel importante en la economía del país.</p>
-        </div>
+      <div class="actividad">
+        <p><strong>1.</strong> ¿Con qué países limita Colombia?</p>
+        <button onclick="responder(this, true)">
+          🇻🇪 Venezuela, 🇪🇨 Ecuador, 🇵🇪 Perú
+        </button>
+        <button onclick="responder(this, false)">
+          🇧🇷 Brasil, 🇨🇱 Chile, 🇺🇾 Uruguay
+        </button>
+        <button onclick="responder(this, false)">
+          🇺🇸 EE.UU, 🇲🇽 México, 🇵🇦 Panamá
+        </button>
+      </div>
 
-        <div id="relieve" class="tab-content">
-            <h2>Relieve de Colombia</h2>
-            <p>El relieve colombiano es muy variado, con grandes montañas como los Andes, valles fértiles y amplias llanuras.</p>
-        </div>
+      <div class="actividad">
+        <p>
+          <strong>2.</strong> ¿Cuál de estas es una región natural de Colombia?
+        </p>
+        <button onclick="responder(this, true)">Andina</button>
+        <button onclick="responder(this, false)">Desértica</button>
+        <button onclick="responder(this, false)">Nevada</button>
+      </div>
 
-        <div id="clima" class="tab-content">
-            <h2>Clima de Colombia</h2>
-            <p>Colombia tiene un clima tropical debido a su ubicación cerca del ecuador, con diversas zonas climáticas como cálido, templado y frío.</p>
-        </div>
-    </div>
+      <div class="actividad">
+        <p><strong>3.</strong> ¿Qué ecosistema es común en la Amazonía?</p>
+        <button onclick="responder(this, true)">Selva húmeda tropical</button>
+        <button onclick="responder(this, false)">Desierto seco</button>
+        <button onclick="responder(this, false)">Sabana costera</button>
+      </div>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Conociendo Colombia. Todos los derechos reservados.</p>
-    </footer>
+      <div class="actividad">
+        <p><strong>4.</strong> ¿Cuál es el ave nacional de Colombia?</p>
+        <button onclick="responder(this, true)">Cóndor de los Andes</button>
+        <button onclick="responder(this, false)">Guacamaya</button>
+        <button onclick="responder(this, false)">Tucán</button>
+      </div>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
-</body>
+      <button onclick="mostrarPuntaje()" class="siguiente">Ver puntaje</button>
+      <div id="puntajeFinal" class="resultado-juego"></div>
+    </section>
 
+
+  </body>
 </html>
